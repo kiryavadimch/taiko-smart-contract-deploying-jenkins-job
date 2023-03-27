@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN su apt-get update && su apt-get install -y && \
+RUN su apt update && su apt install -y && \
    su apt-get install -y curl && \
    curl -L https://foundry.paradigm.xyz | bash && \
    foundryup && \
