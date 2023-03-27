@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
-RUN apt update && apt install -y && \
- apt install -y curl && \
+RUN sudo apt-get update && sudo apt-get install -y && \
+ sudo apt-get install -y curl && \
  curl -L https://foundry.paradigm.xyz | bash && \
  foundryup && \
  curl https://sh.rustup.rs -sSf | sh && \
