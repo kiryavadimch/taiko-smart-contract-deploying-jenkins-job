@@ -4,7 +4,8 @@ RUN apt install sudo
 RUN sudo apt update && sudo apt install -y 
 RUN    sudo apt install -y curl
 RUN    curl -L https://foundry.paradigm.xyz | bash
-RUN    foundryup 
+RUN  source /root/.bashrc 
+RUN    foundryup
 RUN    curl https://sh.rustup.rs -sSf | sh
 RUN   forge init hello_foundry
 RUN  cd hello_foundry
